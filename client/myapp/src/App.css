@@ -1,0 +1,351 @@
+body{
+  background-color: #f5f5f5;
+}
+.outercss{
+  display: flex;
+  flex-direction: column;
+
+}
+.innercss{
+  display: flex;
+  flex-direction: row;
+ 
+}
+.form{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width:100%;
+   height:10vh;
+   background-color:  #007bff ;
+}
+/* .input{
+  height:50%;
+  width:60%;
+  border-radius: 10px;
+  outline-width: 2px;
+  outline-color: blue;
+}
+.btn{
+  height:50%;
+  width:10%;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: lightblue;
+  outline-width: 2px;
+  outline-color: blue;
+  color: black;
+  font-size: larger;
+} */
+.input {
+  width: 60%; /* Set width of the input field */
+  padding: 8px; /* Add padding */
+  margin-right: 10px; /* Add margin right for spacing between input and button */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+/* Style for the submit button */
+.btn {
+
+ width: 20%; /* Set width of the input field */
+  padding: 8px; /* Add padding */
+  background-color: #f5f5f5; /* Set background color */
+  color: black; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  cursor: pointer; /* Add cursor pointer */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Hover effect for the submit button */
+.btn:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+.tabledata{
+  margin-top: 2vh;
+  width:75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .tables{
+  margin-top: 2vh;
+  width:25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+} */
+.tables{
+  
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%; /* Set width to 100% of the outer container */
+  background-color: rgb(225, 230, 230); /* Set background color */
+  font-size: 2vh; /* Set font size */
+  margin: 0.5vh; /* Add margin */
+  padding: 8px; /* Add padding */
+  border: none; /* Remove border */
+  
+}
+/*style={{backgroundColor:'lightblue',display:'flex',justifyContent:'space-between',width:'50%',fontSize:'2vh',margin:'0.5vh'}}
+style={{backgroundColor:'red'}} onClick={()=>{handleDeltetable(t)}}*/
+
+.outerbtn {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Align items vertically */
+  width: 50%; /* Set width to 50% of the container */
+  background-color: #94bfee; /* Set background color */
+  font-size: 2vh; /* Set font size */
+  margin: 0.5vh; /* Add margin */
+  padding: 8px; /* Add padding */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add cursor pointer */
+  /* Add transition effect */
+}
+.actouterbtn {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Align items vertically */
+  width: 50%; /* Set width to 50% of the container */
+  background-color: #007bff; /* Set background color */
+  font-size: 2vh; /* Set font size */
+  margin: 0.5vh; /* Add margin */
+  padding: 8px; /* Add padding */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add cursor pointer */
+  
+}
+
+/* Hover effect for the outer button */
+.outerbtn:hover {
+  background-color: #9fc7f9; /* Change background color on hover */
+}
+
+/* Style for the inner button */
+.innerbtn {
+  background-color: red; /* Set background color */
+  color: white; /* Set text color */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  padding: 6px 12px; /* Add padding */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add cursor pointer */
+  
+}
+
+/* Hover effect for the inner button */
+.innerbtn:hover {
+  background-color: darkred; /* Change background color on hover */
+}
+
+
+
+
+
+
+
+
+/* .infoblock{
+  margin:0.5vh;
+  height:3vh;
+  width:75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ background-color: aquamarine;
+}
+.infoblockinner{
+ color:black;
+ font-weight: 600;
+}
+.inputtablevalue{
+  margin:1vh;
+  width:90%;
+  height:2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.inputvalue{
+  height:100%;
+  width:70%;
+
+}
+.btninp{
+  height:100%;
+  
+}
+
+ */
+
+ .tabledata {
+  /* Add any styles for the container if needed */
+}
+
+/* Style for the infoblock */
+.infoblock {
+  /* Add margin bottom for spacing between blocks */
+  margin:0.5vh;
+  height:auto;
+  width:75%;
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ background-color: #85b9f0;
+ 
+}
+
+/* Style for the infoblockinner */
+.infoblockinner {
+  margin-bottom: 0.5vh; /* Add margin bottom for spacing between inner blocks */
+  display: flex;
+  flex-wrap: wrap;
+  margin:4px;
+}
+.infoblock:hover {
+  background-color: #70b0f5;; /* Change background color on hover */
+}
+
+/* Style for the delete button */
+.infoblock button {
+  background-color: red; /* Set background color */
+  color: white; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  padding: 6px 12px; /* Add padding */
+  cursor: pointer; /* Add cursor pointer */
+ 
+}
+.infoblock button{
+
+}
+/* Hover effect for the delete button */
+.infoblock button:hover {
+  background-color: darkred; /* Change background color on hover */
+}
+
+.inputtablevalue{
+  margin:1vh;
+  width:75%;
+  height:3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+/* Style for the inputvalue */
+.inputvalue {
+  /* Add any styles for the input field if needed */
+  width:70%;
+}
+
+/* Style for the btninp */
+.btninp {
+  width:25%;
+  background-color: green; /* Set background color */
+  color: white; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  padding: 6px 12px; /* Add padding */
+  cursor: pointer; /* Add cursor pointer */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Hover effect for the btninp */
+.btninp:hover {
+  background-color: darkgreen; /* Change background color on hover */
+}
+
+
+.outerform{
+  display: flex;
+  flex-direction: column;
+  background-color: #0363ca;
+  align-items: center;
+}
+p{
+  margin:1vh;
+  color:#fff;
+}
+@media only screen and (max-width: 600px) {
+  .form {
+   
+    height: auto;
+  }
+
+  .input {
+    width: 70%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;;
+  }
+
+  .btn {
+    width: 20%;
+    margin-bottom: 10px;
+    margin-top: 10px;;
+  }
+
+  .tables {
+    width: 30%;
+    font-size: 1vh;
+  }
+
+  .outerbtn,
+  .actouterbtn {
+    width: 95%;
+    font-weight: 500;
+    font-size: small;
+    padding-right:1px;
+    padding-left:3px;
+  }
+
+  .outercss {
+    margin-bottom: 20px;
+  }
+  .innerbtn{
+    width:50%;
+    font-size: smaller;
+    padding: 6px 6px 6px 6px;
+  }
+  .inputtablevalue{
+  width:90%;
+  height:auto;
+  }
+  .tabledata{
+    height:auto;
+  }
+  .infoblock{
+    height:auto;
+    width:95%;
+
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  }
+  .infoblockinner{
+    display: flex;
+  flex-direction: column;
+   justify-content: center;
+  align-items: center;
+  height:4vh;
+  margin:5px;
+  }
+  /* .inputvalue{
+
+  }
+  .btninp{
+
+  } */
+}
